@@ -1,12 +1,12 @@
 <template>
   <div class="o1-pt-2 o1-pb-1">
-    <h3 class="px-3 text-xs uppercase font-bold tracking-wide">
+    <h3 class="text-sm uppercase tracking-wide text-80 bg-30 p-3">
       {{ filter.name }}
     </h3>
 
     <div class="p-2">
       <input
-        class="w-full block form-control form-select form-control-sm form-input-bordered"
+        class="w-full block flex items-center form-control form-input form-input-bordered pr-6"
         :type="filter.input_type"
         :pattern="filter.input_integers ? '\\d*' : false"
         :min="filter.input_min"
