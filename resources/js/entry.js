@@ -1,5 +1,3 @@
-import InputFilter from './components/InputFilter';
-
-Nova.booting(Vue => {
-  Vue.component('nova-input-filter', InputFilter);
+Nova.booting((Vue, router, store) => {
+  Vue.component('nova-input-filter', require('./components/InputFilter.vue'));
 });
